@@ -10,10 +10,12 @@ CONFIG += c++17
 
 SOURCES += \
     controlswidget.cpp \
+    fileprompt.cpp \
     main.cpp
 
 HEADERS += \
-    controlswidget.h
+    controlswidget.h \
+    fileprompt.h
 
 FORMS +=
 

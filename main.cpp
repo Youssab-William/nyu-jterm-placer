@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 	QPushButton *button5 = new QPushButton("Five");
 
 	QGridLayout *layout = new QGridLayout(window);
-	layout->addWidget(controls, 0, 0);
+	layout->addWidget(controls, 0, 0, 1, 2);
 	layout->addWidget(button3, 1, 0, 1, 2);
 	layout->addWidget(button4, 2, 0);
 	layout->addWidget(button5, 2, 1);
