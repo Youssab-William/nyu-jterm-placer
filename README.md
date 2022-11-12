@@ -1,1 +1,1 @@
-# nyu-jterm-selector
+# nyu-jterm-placer
