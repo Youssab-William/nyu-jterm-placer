@@ -1,6 +1,10 @@
-#include "../include/student.h"
-#include "../include/course.h"
-#include "../include/matcher.h"
+// #include "../include/student.h"
+// #include "../include/course.h"
+// #include "../include/matcher.h"
+
+#include "student.h"
+#include "course.h"
+#include "matcher.h"
 
 #include <iostream>
 #include <string>
