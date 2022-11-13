@@ -1,3 +1,6 @@
+# Per-User Project Options
+*.user
+
 # Prerequisites
 *.d
 
