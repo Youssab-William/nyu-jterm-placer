@@ -15,6 +15,14 @@ std::ostream& operator<<(std::ostream& os, const Matcher::Edge &e) {
 }
 
 int Matcher::match(std::vector<Student> &students, std::vector<Course> &courses) {
+	// reset students and courses
+	for (Student &student : students) {
+		student.placement = "";
+	}
+	for (Course &course : courses) {
+		course.enrollment_count = 0;
+	}
+
 	// curate a list of all possible courses
 	std::set<std::string> course_ids;
 	for (Course course : courses) {

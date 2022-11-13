@@ -17,6 +17,7 @@ include(./QXlsx.pri)
 SOURCES += \
     controlswidget.cpp \
     datareader.cpp \
+    datawriter.cpp \
     fileprompt.cpp \
     main.cpp \
     matcher.cpp \
