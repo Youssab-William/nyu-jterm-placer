@@ -6,6 +6,8 @@ TableThingy::TableThingy(int r, int c, QString ***data, QWidget *parent)
     this->r = r;
     this->c = c;
     this->table = new QTableWidget(r, c, parent);
+    this->table->setMinimumSize(75, 100);
+//    this->table->setGeometry(QRect(QPoint(0, 50), QSize(500, 500)));
     for(int i = 0; i < this->r; ++i){
         for(int j = 0; j < this->c; ++j){
             QTableWidgetItem *newItem = new QTableWidgetItem();

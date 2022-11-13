@@ -22,6 +22,7 @@ SOURCES += \
     main.cpp \
     matcher.cpp \
     student.cpp \
+    tabholder.cpp \
     tablethingy.cpp
 
 HEADERS += \
@@ -33,6 +34,7 @@ HEADERS += \
     matcher.h \
     qxlsx.h \
     student.h \
+    tabholder.h \
     tablethingy.h
 
 # Default rules for deployment.

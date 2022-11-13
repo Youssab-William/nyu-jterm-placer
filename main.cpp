@@ -5,6 +5,8 @@
 #include "matcher.h"
 #include "student.h"
 #include "course.h"
+#include "tablethingy.h"
+#include "tabholder.h"
 
 #include <vector>
 
@@ -24,18 +26,40 @@ int main(int argc, char *argv[]) {
 	QWidget *window = new QWidget;
 	ControlsWidget *controls = new ControlsWidget;
 
-	QGridLayout *layout = new QGridLayout(window);
-	layout->addWidget(controls, 0, 0, 1, 2);
+    QGridLayout *layout = new QGridLayout(window);
+    layout->addWidget(controls, 0, 0, 1, 2);
+
+    QString ***array;
+    int r = 5, c = 9;
+    array = new QString **[r];
+    for(int i = 0; i < r; i++){
+        array[i] = new QString*[c];
+        for(int j = 0; j < c; ++j){
+            std::string s = " ";
+            array[i][j] = new QString(s.c_str());
+        }
+    }
+
+    TabHolder *tabs = new TabHolder(window);
+
+    TableThingy *tb = new TableThingy(r, c, array, window);
+
+    TableThingy *tb2 = new TableThingy(r-2, c-2, array, window);
+
+    tabs->addTable(tb, (std::string)"Students");
+    tabs->addTable(tb2, (std::string)"Courses");
+
+    layout->addWidget(tabs->tabs, 1, 0, 2, 2);
 
 	// connect the file upload buttons
 	QObject::connect(controls->file_prompts[0], &FilePrompt::file_changed, [&]() {
 			reader.read_students(controls->file_prompts[0]->file_path.toStdString().c_str());
-			// redisplay grid
+            // redisplay grid
 			});
 
 	QObject::connect(controls->file_prompts[1], &FilePrompt::file_changed, [&]() {
 			reader.read_courses(controls->file_prompts[1]->file_path.toStdString().c_str());
-			// redisplay grid
+            // redisplay grid
 			});
 
 	// connect the file export buttons
@@ -51,7 +75,7 @@ int main(int argc, char *argv[]) {
 	Matcher matcher;
 	QObject::connect(controls->match_button, &QPushButton::clicked, [&]() {
 			matcher.match(*students, *courses);
-			// redisplay grid
+            // redisplay grid
 			});
 
 	// connect the export button

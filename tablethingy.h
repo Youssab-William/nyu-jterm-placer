@@ -4,7 +4,6 @@
 #include <cstring>
 #include <QWidget>
 #include <QTableWidget>
-#include "mainwindow.h"
 
 class TableThingy
 {
