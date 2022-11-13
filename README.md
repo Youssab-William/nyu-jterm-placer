@@ -1,10 +1,10 @@
-# NYU Jterm Placer Command Line Tool (CLI) &nbsp; ![Image of Version](https://img.shields.io/badge/version-v1.0-green) ![Image of Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen)
+# NYU J-Term Placer Command Line Tool (CLI) &nbsp; ![Image of Version](https://img.shields.io/badge/version-v1.0-green) ![Image of Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen)
 
 ## Introduction
 
-In NYU jterms are short 3 week intensive courses that can be abroad, on campus, or with an international trip.
+In NYU J-Terms are short 3 week intensive courses that can be abroad, on campus, or with an international trip.
 
-Since jterm courses have very limited capacities, applying to jterms is different from applying to normal courses. Students pick their top 6 choices in order and the system should try to place them in the best possible way, given that:
+Since J-Term courses have very limited capacities, applying to jterms is different from applying to normal courses. Students pick their top 6 choices in order and the system should try to place them in the best possible way, given that:
 - Each course has a certain maximum capacity
 - Students that will graduate earlier are given priority (i.e. seniors, then sophomores, etc.)
 - The system tries to maximize the total happiness
@@ -105,3 +105,4 @@ Given this time complexity, I'd expect the code to run in a few (1-3) seconds fo
 
 ## Graphical User Interface
 
+![](gui.jpg)
