@@ -20,7 +20,8 @@ SOURCES += \
     fileprompt.cpp \
     main.cpp \
     matcher.cpp \
-    student.cpp
+    student.cpp \
+    tablethingy.cpp
 
 HEADERS += \
     controlswidget.h \
@@ -30,7 +31,8 @@ HEADERS += \
     fileprompt.h \
     matcher.h \
     qxlsx.h \
-    student.h
+    student.h \
+    tablethingy.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

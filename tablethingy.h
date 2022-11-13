@@ -13,6 +13,7 @@ public:
     QTableWidget *table;
     int r, c;
     TableThingy(int r, int c, QString ***data, QWidget *parent = nullptr);
+    ~TableThingy();
     void toggleVisibility();
 };
 
