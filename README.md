@@ -4,7 +4,7 @@
 
 In NYU J-Terms are short 3 week intensive courses that can be abroad, on campus, or with an international trip.
 
-Since J-Term courses have very limited capacities, applying to jterms is different from applying to normal courses. Students pick their top 6 choices in order and the system should try to place them in the best possible way, given that:
+Since jterm courses have very limited capacities, applying to jterms is different from applying to normal courses. Students pick their top 6 choices in order and the system should try to place them in the best possible way, given that:
 - Each course has a certain maximum capacity
 - Students that will graduate earlier are given priority (i.e. seniors, then sophomores, etc.)
 - The system tries to maximize the total happiness
@@ -105,4 +105,6 @@ Given this time complexity, I'd expect the code to run in a few (1-3) seconds fo
 
 ## Graphical User Interface
 
-![](gui.jpg)
+As the final step of the project, using Qt, we implemented a user interface to help the user/university upload the list of courses, the list of students and their details and choices. The "Match" button lets the program match the students and the "Export" option lets you save the details to a spreadsheet of the user's choice.
+
+![](gui.png)
