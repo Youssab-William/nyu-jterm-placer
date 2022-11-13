@@ -1,4 +1,4 @@
-# NYU J-Term Placer Command Line Tool (CLI) &nbsp; ![Image of Version](https://img.shields.io/badge/version-v1.0-green) ![Image of Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen)
+# NYU J-Term Placer Tool &nbsp; ![Image of Version](https://img.shields.io/badge/version-v1.0-green) ![Image of Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen)
 
 ## Introduction
 
