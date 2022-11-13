@@ -6,14 +6,16 @@
 #include <QWidget>
 #include <QGridLayout>
 
-class ControlsWidget : public QWidget
-{
+class ControlsWidget : public QWidget {
 	Q_OBJECT;
 
 	QGridLayout *layout;
-	FilePrompt *file_prompts[4];
 
 	public:
+		FilePrompt *file_prompts[4];
+		QPushButton *match_button;
+		QPushButton *export_button;
+
 		explicit ControlsWidget(QWidget *parent = nullptr);
 
 	signals:
