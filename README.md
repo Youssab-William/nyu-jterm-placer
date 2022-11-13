@@ -105,4 +105,6 @@ Given this time complexity, I'd expect the code to run in a few (1-3) seconds fo
 
 ## Graphical User Interface
 
+We implemented a user interface to help the user/university upload the list of courses, the list of students and their details and choices and let the program match the students and also save the details to a spreadsheet of the user's choice.
+
 ![](gui.png)
