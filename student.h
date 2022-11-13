@@ -13,7 +13,7 @@ class Student {
 		std::vector<std::string> choices;
 		std::string placement;
 
-		Student(std::string nm, int yr, std::vector<std::string> &ch) : name{nm}, year{yr}, choices{ch}, placement{""} {}
+		Student(std::string nm, int yr, std::vector<std::string> ch) : name{nm}, year{yr}, choices{ch}, placement{""} {}
 
 		friend std::ostream& operator<<(std::ostream& os, const Student &student);
 };

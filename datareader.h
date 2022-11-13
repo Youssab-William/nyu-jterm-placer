@@ -8,7 +8,7 @@
 #define DATAREADER_H 
 
 class DataReader {
-	int choice_count = 6;
+	int choice_count = 3;
 	std::vector<Student> *students = nullptr;
 	std::vector<Course> *courses = nullptr;
 
