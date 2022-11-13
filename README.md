@@ -105,6 +105,6 @@ Given this time complexity, I'd expect the code to run in a few (1-3) seconds fo
 
 ## Graphical User Interface
 
-We implemented a user interface to help the user/university upload the list of courses, the list of students and their details and choices and let the program match the students and also save the details to a spreadsheet of the user's choice.
+As the final step of the project, using Qt, we implemented a user interface to help the user/university upload the list of courses, the list of students and their details and choices. The "Match" button lets the program match the students and the "Export" option lets you save the details to a spreadsheet of the user's choice.
 
 ![](gui.png)
