@@ -19,7 +19,7 @@ int main(int argc, char *argv[]) {
 	std::vector<Course> *courses = new std::vector<Course>;
 
 	DataReader reader(students, courses);
-	DataWriter writer;
+	DataWriter writer(students, courses);
 
 	QWidget *window = new QWidget;
 	ControlsWidget *controls = new ControlsWidget;
@@ -48,9 +48,16 @@ int main(int argc, char *argv[]) {
 			});
 
 	// connect the match button
-	Matcher matcher();
+	Matcher matcher;
 	QObject::connect(controls->match_button, &QPushButton::clicked, [&]() {
 			matcher.match(*students, *courses);
+			// redisplay grid
+			});
+
+	// connect the export button
+	QObject::connect(controls->export_button, &QPushButton::clicked, [&]() {
+			writer.write_students();
+			writer.write_courses();
 			});
 
 	window->show();
