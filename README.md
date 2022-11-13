@@ -11,9 +11,6 @@ Since jterm courses have very limited capacities, applying to jterms is differen
 
 However after the last jterm placement, this project is a proposal for a better jterm placer algorithm!
 
-## Instructions
-
-
 
 ## How it works
 
