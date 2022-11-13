@@ -105,4 +105,4 @@ Given this time complexity, I'd expect the code to run in a few (1-3) seconds fo
 
 ## Graphical User Interface
 
-![](gui.jpg)
+![](gui.png)
