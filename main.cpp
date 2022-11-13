@@ -2,6 +2,7 @@
 #include "fileprompt.h"
 #include "datareader.h"
 #include "datawriter.h"
+#include "matcher.h"
 #include "student.h"
 #include "course.h"
 
@@ -26,6 +27,7 @@ int main(int argc, char *argv[]) {
 	QGridLayout *layout = new QGridLayout(window);
 	layout->addWidget(controls, 0, 0, 1, 2);
 
+	// connect the file upload buttons
 	QObject::connect(controls->file_prompts[0], &FilePrompt::file_changed, [&]() {
 			reader.read_students(controls->file_prompts[0]->file_path.toStdString().c_str());
 			// redisplay grid
@@ -36,12 +38,19 @@ int main(int argc, char *argv[]) {
 			// redisplay grid
 			});
 
+	// connect the file export buttons
 	QObject::connect(controls->file_prompts[2], &FilePrompt::file_changed, [&]() {
 			writer.students_path = controls->file_prompts[2]->file_path.toStdString().c_str();
 			});
 
 	QObject::connect(controls->file_prompts[3], &FilePrompt::file_changed, [&]() {
 			writer.courses_path = controls->file_prompts[3]->file_path.toStdString().c_str();
+			});
+
+	// connect the match button
+	Matcher matcher();
+	QObject::connect(controls->match_button, &QPushButton::clicked, [&]() {
+			matcher.match(*students, *courses);
 			});
 
 	window->show();

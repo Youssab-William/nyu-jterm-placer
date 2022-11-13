@@ -1,7 +1,3 @@
-// #include "../include/student.h"
-// #include "../include/course.h"
-// #include "../include/matcher.h"
-
 #include "student.h"
 #include "course.h"
 #include "matcher.h"
