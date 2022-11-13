@@ -4,7 +4,7 @@
 
 In NYU J-Terms are short 3 week intensive courses that can be abroad, on campus, or with an international trip.
 
-Since J-Term courses have very limited capacities, applying to jterms is different from applying to normal courses. Students pick their top 6 choices in order and the system should try to place them in the best possible way, given that:
+Since jterm courses have very limited capacities, applying to jterms is different from applying to normal courses. Students pick their top 6 choices in order and the system should try to place them in the best possible way, given that:
 - Each course has a certain maximum capacity
 - Students that will graduate earlier are given priority (i.e. seniors, then sophomores, etc.)
 - The system tries to maximize the total happiness
